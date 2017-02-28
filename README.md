@@ -1,24 +1,39 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simple calendar app build with Facebook React and Ruby on Rails 5
 
-Things you may want to cover:
+## Ruby version
+2.3.1
 
-* Ruby version
+## Installation
 
-* System dependencies
+Install node modules.
 
-* Configuration
+```
+# Excute in HOME/client/
+$ npm install
+```
 
-* Database creation
+Install gem files.
 
-* Database initialization
+```
+# Excute in Home/
+$ bundle install
+```
 
-* How to run the test suite
+## Setup
 
-* Services (job queues, cache servers, search engines, etc.)
+Modify app.env according to your environment.
+```
+API_PORT="3000"
+API_IP="0.0.0.0"
+API_SERVER_NAME="localhost"
+APP_PORT="80"
+```
 
-* Deployment instructions
+## Start
 
-* ...
+```
+# Excute in Home/
+$ foreman start -e app.env
+```
